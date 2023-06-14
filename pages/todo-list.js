@@ -1,5 +1,8 @@
 import React from 'react'
 import Todo from '../components/Todo';
+import HelloWorld from '../components/HelloWorld';
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
 let homeTasks = [
     {name: 'laundry', description: '...'},
@@ -13,10 +16,15 @@ let workTasks = [
 
 const TodoListPage = () => (
   <div>
-    <h1>Pending tasks for home:</h1>
-    <Todo tasks={homeTasks} />
-    <h2>Pending tasks for work:</h2>
-    <Todo tasks={workTasks} />
+    <div>
+        <h1>Pending tasks for home:</h1>
+        <Todo tasks={homeTasks} />
+        <h2>Pending tasks for work:</h2>
+        <Todo tasks={workTasks} />
+        <HelloWorld initialName='Peter' />
+        <HelloWorld initialName='Roger' />
+    </div>
+    
     <style jsx global>{`
         html,
         body {
