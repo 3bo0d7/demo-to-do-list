@@ -21,7 +21,7 @@ const Todo = ({tasks}) => (
   <table>
      <tbody>
     <tr>
-      <th>Name</th>
+      <th><div className="body">Name</div></th>
       <th>Description</th>
     </tr>
     {renderTasks(tasks)}
