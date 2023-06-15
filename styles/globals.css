@@ -37,3 +37,8 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
