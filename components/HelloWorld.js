@@ -12,10 +12,12 @@ function HelloWorld({ initialName }) {
 
     return (
     <div>
-        <input name="aaa" type="text" value={name} onChange={handleNewName}/>
         <h1>Hello {name}</h1>
+        <input name="aaa" type="text" value={name} onChange={handleNewName}/>
     </div>
     )
 }
+
+
 
 export default HelloWorld;

@@ -1,46 +1,33 @@
-import React from 'react'
+import styles from '../styles/TodoListPage.module.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import Todo from '../components/Todo';
 import HelloWorld from '../components/HelloWorld';
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import NewTask from '../components/NewTask';
+
 
 let homeTasks = [
-    {name: 'laundry', description: '...'},
-    {name: 'groceries', description: '...'}
+    {id: '1', name: 'laundry', description: '...'},
+    {id: '2', name: 'groceries', description: '...'}
 ];
 
 let workTasks = [
-    {name: 'learn react', description: '...'},
-    {name: 'learn nextjs', description: '...'}
+    {id: '1', name: 'learn react', description: '...'},
+    {id: '2', name: 'learn nextjs', description: '...'}
 ];
 
 const TodoListPage = () => (
-  <div>
-    <div>
-        <h1>Pending tasks for home:</h1>
+  <div className={styles.todoList}>
+    <div className='w-75 mx-auto'>
+        <h1 className='body'>Pending tasks for home:</h1>
         <Todo tasks={homeTasks} />
         <h2>Pending tasks for work:</h2>
         <Todo tasks={workTasks} />
-        <HelloWorld initialName='Peter' />
-        <HelloWorld initialName='Roger' />
+        <HelloWorld initialName='Peter' className='container' />
+        <br/>
+        <NewTask ></NewTask>
     </div>
-    
-    <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-        table, th, td {
-          border: 1px dashed blue
-        }
-      `}</style>
   </div>
 )
 

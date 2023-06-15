@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 
 function NewTask() {
     const [inputs, setInputs] = useState({});
@@ -17,6 +17,11 @@ function NewTask() {
     return (
       // home tasks
       <form onSubmit={handleSubmit}>
+        <div class="mb-3">
+          <label for="taskName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="taskName" aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">Name of the task you have to dom</div>
+        </div>
         <label>Enter new HomeTask:
         <input 
           type="text" 
@@ -25,7 +30,7 @@ function NewTask() {
           onChange={handleChange}
         />
         </label>
-        <label>Description of Task:
+        <label >Description of Task:
         <input 
           type="text" 
           name="tasktype2" 
@@ -35,8 +40,7 @@ function NewTask() {
         </label>
           <input type="submit" />
   
-        <span/>
-        <span/>
+        <br/>
   
         <label>Enter new workTask:
         <input 
@@ -54,6 +58,8 @@ function NewTask() {
           onChange={handleChange}
         />
         </label>
+        <input type="submit" />
+
       </form>
   
       
