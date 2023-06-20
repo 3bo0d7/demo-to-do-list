@@ -20,11 +20,12 @@ let workTasks = [
 const TodoListPage = () => (
   <div className={styles.todoList}>
     <div className='w-75 mx-auto'>
-        <h1 className='body'>Pending tasks for home:</h1>
+        <h1 className={styles.titles}>Pending tasks for home 123:</h1>
         <Todo tasks={homeTasks} />
         <h2>Pending tasks for work:</h2>
         <Todo tasks={workTasks} />
-        <HelloWorld initialName='Peter' className='container' />
+        
+        <HelloWorld initialName='Peter' className='container todo-input' />
         <br/>
         <NewTask ></NewTask>
     </div>
