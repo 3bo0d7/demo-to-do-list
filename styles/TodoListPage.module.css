@@ -4,3 +4,12 @@
     width: 100%;
     border: 1px dashed blue;
 }
+
+.titles {
+    text-align: 'center'; 
+    font-weight: 'bold';
+    font-size: 18;
+    margin-top: 0;
+    width: 200;
+    background-color: 'green';
+  }

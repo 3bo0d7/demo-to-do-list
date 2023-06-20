@@ -17,11 +17,6 @@ function NewTask() {
     return (
       // home tasks
       <form onSubmit={handleSubmit}>
-        <div class="mb-3">
-          <label for="taskName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="taskName" aria-describedby="emailHelp" />
-            <div id="emailHelp" class="form-text">Name of the task you have to dom</div>
-        </div>
         <label>Enter new HomeTask:
         <input 
           type="text" 

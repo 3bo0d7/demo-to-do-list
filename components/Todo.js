@@ -31,17 +31,17 @@ const Todo = ({tasks}) => (
    
     <form className="g-3 mt-2 w-50 mx-auto">
       <h3 className="mt-4">Create new task</h3>
-      <div class="mb-3">
-        <label for="taskName" className="form-label">Name</label>
-        <input type="text" className="form-control" id="taskName" aria-describedby="emailHelp" />
+      <div className="mb-3">
+        <label className="form-label">Name</label>
+        <input type="text" className="form-control" aria-describedby="emailHelp" />
         <div id="emailHelp" className="form-text">Name of the task you have to do</div>
       </div>
-      <div class="mb-3">
-        <label for="taskDescription" className="form-label">Description</label>
-        <input type="text" className="form-control" id="taskDescription" aria-describedby="emailHelp" />
-        <div id="descriptionHelp" class="form-text">Description of the task you have to do</div>
+      <div className="mb-3">
+        <label className="form-label">Description</label>
+        <input type="text" className="form-control" aria-describedby="emailHelp" />
+        <div id="descriptionHelp" className="form-text">Description of the task you have to do</div>
       </div>
-      <button type="submit" class="btn btn-primary">Create task</button>
+      <button type="submit" className="btn btn-primary">Create task</button>
     </form>
   
   </div>
